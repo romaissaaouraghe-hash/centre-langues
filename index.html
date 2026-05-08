@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Langues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Centre International des Langues</h1>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Formations</a>
+        <a href="#">Inscription</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Apprenez les langues facilement</h2>
+
+    <p>
+        Anglais - Français - Espagnol - Allemand
+    </p>
+
+    <button onclick="afficherMessage()">
+        Découvrir nos cours
+    </button>
+
+    <p id="message"></p>
+</section>
+
+<main>
+
+<section class="presentation">
+
+    <h2>Pourquoi choisir notre centre ?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Professeurs qualifiés</h3>
+            <p>Des enseignants expérimentés.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cours modernes</h3>
+            <p>Des méthodes simples et interactives.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certificat</h3>
+            <p>Attestation à la fin de la formation.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="formulaire">
+
+    <h2>Formulaire d'inscription</h2>
+
+    <form onsubmit="return verifierFormulaire()">
+
+        <label>Nom complet</label>
+        <input type="text" id="nom">
+
+        <label>Email</label>
+        <input type="email" id="email">
+
+        <label>Téléphone</label>
+        <input type="tel" id="telephone">
+
+        <label>Langue choisie</label>
+
+        <select id="langue">
+            <option>Anglais</option>
+            <option>Français</option>
+            <option>Espagnol</option>
+            <option>Allemand</option>
+        </select>
+
+        <label>Message</label>
+        <textarea id="messageTexte" rows="5"></textarea>
+
+        <button type="submit">
+            S'inscrire
+        </button>
+
+    </form>
+
+    <p id="resultat"></p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Centre International des Langues</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
